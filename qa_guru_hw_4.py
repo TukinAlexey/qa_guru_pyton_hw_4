@@ -59,7 +59,6 @@ def test_random_list():
     upper_number = 10
     l = [random.randint(lower_number, upper_number) for _ in range(n)]
     l.sort()
-    print(l)
 
     assert len(l) == 10
     assert all(l[i] <= l[i + 1] for i in range(len(l) - 1))
